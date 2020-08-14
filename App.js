@@ -1,5 +1,5 @@
 import React from 'react';
-import{View,Text,StyleSheet,ScrollView,Image,Button,Alert,Vibration,} from 'react-native';
+import{View,Text,StyleSheet,ScrollView,Image,Button,Alert,Vibration, ActivityIndicator,} from 'react-native';
 import Box from './component/Box';
 
 class App extends React.Component{
@@ -23,6 +23,7 @@ class App extends React.Component{
             title='click'
             onPress={()=>Vibration.vibrate(10)}
           />
+          <ActivityIndicator size="large"/>
           <Box/>
         </View>
       </ScrollView>
